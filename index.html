@@ -1,87 +1,60 @@
 <!DOCTYPE html>
-<!--
-    Anything you put in between the double-dash arrow symbols shown around
-    this block of text is designated a 'comment' intended for human coders
-    and ignored by the computer. The top "<!DOCTYPE html>" line of code 
-    declares that this text file is to be interpreted as HTML code.
--->
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
-<html lang=en>
-<!--
-    This opening tag marks the start of the html code.  Everything below
-    until the </html> closing tag is part of this element. "lang" is an
-    attribute defining the language of the website. The value "en" 
-    indicates this site is written in English. We indent the content
-    inside an element to make it easier for people to read and understand.
--->
+body {
+  margin: 0;
+  padding: 0;
+}
 
-    <head>
-    <!--Code *about* the website, NOT displayed in the browser window.-->
+header {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
 
-        <meta charset="UTF-8"> <!--Sets site to use standard characters.-->
+/* Style the topnav */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+}
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- Sizes your site to the visitor's screen size -->
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: #f1f1f1;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
-        <meta name="author" content="Your Name">
-        <!--
-            Some tags like "meta" are self-closing. They have "attributes" 
-            but no inner content and they don't need or use a closing tag.
-        -->
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: #dddddd;
+  color: black;
+}
+</style>
+</head>
+<body>
 
-        <title>Yourname's Projectname</title>
-        <!--The 'title' is what's displayed in the browser tab.-->
+<header>
+  <h1>My Header</h1>
+</header>
 
-        <link rel="stylesheet" href="/style.css">
-        <!--
-            HTML (HyperText Markup Language) code is for the website 
-            content. CSS (Cascading Style Sheets) code is for the website 
-            style. The line above tells the browser the file location and 
-            file name to find this code that you'll write/edit there.
-        -->
+<ul class="topnav">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+</ul>
 
-        <link rel="icon" type="image/png" href="/favicon.png">
-        <!--
-            If you made/found a favicon, export/name it exactly favicon.png
-            and upload to the top level of your repo, then this line of
-            code will use it as your site icon in the browser tab.
-        -->
-
-    </head>
-
-    <body> <!--Everything to be displayed in the browser window.-->
-          
-        <!--example headings, paragraphs, lists-->
-        <h1>This is the biggest heading (for title, etc)</h1>
-        <p>This is the first paragraph</p>
-        <h2>This is the second biggest heading type</h2>
-        <p>Another paragraph</p>
-        <h2>Another second-biggest-heading</h2>
-        <ul>
-            <li>use ul for bullet point (unordered) lists</li>
-            <li>use ol for numbered (ordered) lists</li>
-        </ul>
-
-        <!--example images (uploaded to repo's "images" directory)-->
-        <img 
-            src="/images/exact_image_name.webp"
-            width="560" 
-            alt="Your description of image in words">
-
-        <!--example video (or other content from another webpage)-->
-        <iframe 
-            src="https://drive.google.com/file/d/FILE_ID/preview"
-            width="560" height="315"
-            allowfullscreen>
-        </iframe>
-        <!-- replace FILE_ID in the example link above with the
-             exact text from the equivalent spot within your 
-             actual video's Google Drive shared link -->
-
-        <!--example links-->
-        <a href="/about.html">Link to page/file on your website</a>
-        <a href="https://github.com" target="_blank">Link to
-            external page on the web (_blank opens in new tab)</a>
-
-    </body>
+</body>
 </html>
