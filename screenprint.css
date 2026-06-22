@@ -1,1 +1,18 @@
+body {
+  background-color: #3399ff;
+  color:darkblue;
+  font-size:20px
+}
 
+h1 {
+  color: white;
+  text-align: center;
+  font-family: Comic Sans MS;
+  font-size: 45px
+}
+
+p {
+  font-family: Bodoni Moda;
+  font-size: 25px;
+  color:Darkred;
+}
