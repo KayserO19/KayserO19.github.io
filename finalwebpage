@@ -1,1 +1,4 @@
-
+Body {
+  Color: DodgerBlue;
+  Background-color: white
+}
